@@ -1,7 +1,7 @@
 # My First C++
 
-#Noob
-Learning C++ 
+## Noob Learning C++ 
+
 Did something 
 <details>
   <summary>KEK</summary>
