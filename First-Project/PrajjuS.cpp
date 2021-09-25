@@ -10,7 +10,7 @@
 
 using namespace std;
 int main()
-{    
+{
     char human,again;
     cout<<"\nType Y or y to prove that you are Human: ";
     cin>>human;
@@ -26,7 +26,7 @@ int main()
         usleep(3*1000000);
 
         /******************** VARIABLES ********************/
-        float A[100], x, y, z, big, small, ans=0, pd=1, prod=1, sum=0, area, r, l, b, h, d1, d2; 
+        float A[100], x, y, z, big, small, ans=0, pd=1, prod=1, sum=0, area, r, l, b, h, d1, d2;
         int n, i, B[100], ans2, eod, j, p, rows, fact, flag, s1, s2, s3, p1, p2, p3, year, orig, rem, res, rev, f, f1, f2, ele, first, last, index, mid, pass=0, temp, t, a, b2, c, d, root1, root2, M[100][100], ro, cl, rsum, csum, M1[100][100], M2[100][100];
         string spam, pt;
         unsigned int slsec = 1000000;
@@ -82,7 +82,7 @@ int main()
         cout<<"40. About Me\n";usleep(0.2*slsec);
         cout<<"============================================================\n";usleep(1*slsec);
         /*****************************************************************/
-    
+
         /**************************** BODY START *****************************/
         int choice;
         cout<<"KeK Now input your choice: ";
@@ -147,7 +147,7 @@ int main()
                     pd = A[i] / pd;
                 }
                 cout<<"Division = "<<pd<<"\n";
-                break; 
+                break;
 
             case 5:
                 cout<<"Enter the number of elements you want to find reminder\n";
@@ -162,7 +162,7 @@ int main()
                     ans2 = B[i] % ans2;
                 }
                 cout<<"Reminder = "<<pd<<"\n";
-                break;   
+                break;
 
             case 6:
                 cout<<"Enter length of square\n";
@@ -248,16 +248,16 @@ int main()
                             A[j]=x;
                         }
                     }
-                } 
+                }
                 cout<<"Biggest Number = "<<big<<"\n";
                 cout<<"Second Largest Number = "<<A[1]<<"\n";
-                cout<<"Smallest Number = "<<small<<"\n"; 
+                cout<<"Smallest Number = "<<small<<"\n";
                 cout<<"Second Smallest Number = "<<A[n - 2]<<"\n";
                 break;
-    
+
             case 14:
                 cout<<"Enter any character\n";
-                cin>>ch; 
+                cin>>ch;
                 if (ch>='a' && ch<='z')
                 {
                     cout<<"Its lower case character\n";
@@ -272,8 +272,8 @@ int main()
                 }
                 else
                 cout<<"It is special case character\n";
-                break;   
-    
+                break;
+
             case 15:
                 cout<<"Enter any year in YYYY format\n";
                 cin>>year;
@@ -286,14 +286,14 @@ int main()
                 break;
 
             case 16:
-                cout<<"Enter the values of three sides of triangle\n"; 
+                cout<<"Enter the values of three sides of triangle\n";
                 cin>>x>>y>>z;
                 s1=x+y;
                 s2=x+z;
                 s3=y+z;
                 if (x >= s1 || y >= s2 || z >= s3)
                 {
-                    cout<<"Triangle cannot be formed\n";            
+                    cout<<"Triangle cannot be formed\n";
                 }
                 else
                 if (x == y && x == z && y == z)
@@ -310,7 +310,7 @@ int main()
                 }
                 p1=x*x+y*y;
                 p2=x*x+z*z;
-                p3=y*y+z*z; 
+                p3=y*y+z*z;
                 if (p1 == z*z || p2 == y*y || p3 == x*x)
                 {
                     cout<<"It is Right Angled Triangle\n";
@@ -324,13 +324,13 @@ int main()
                 for (i = 1; i <= n; i++)
                 {
                     cout<<i<<"\n";
-                } 
+                }
                 break;
 
             case 18:
                 cout<<"Enter the nth number\n";
                 cin>>n;
-                cout<<"Number from "<<n<<" to 1 is\n"; 
+                cout<<"Number from "<<n<<" to 1 is\n";
                 for (i = n; i >= 1; i--)
                 {
                     cout<<i<<"\n";
@@ -379,7 +379,7 @@ int main()
                 {
                 sum=sum+i;
                 }
-                cout<<"Sum = "<<sum<<"\n"; 
+                cout<<"Sum = "<<sum<<"\n";
                 break;
 
             case 23:
@@ -399,11 +399,11 @@ int main()
                 cout<<"Enter any Number\n";
                 cin>>n;
                 for (i = 2; i <= n/2; i++)
-                { 
+                {
                     if (n%i == 0)
                     {
                         flag=1;
-                       break; 
+                       break;
                     }
                 }
                 if (flag == 0)
@@ -424,15 +424,15 @@ int main()
                         flag=1;
                         break;
                     }
-                } 
+                }
                 if (flag == 0)
                 {
                     cout<<"The Number "<<n<<" is Power of 2\n";
                 }
-                else  
+                else
                 cout<<"The Number "<<n<<" is Not a Power of 2\n";
                 break;
- 
+
             case 26:
                 cout<<"Enter any Number\n";
                 cin>>n;
@@ -462,9 +462,9 @@ int main()
                 cout<<"BRUH Enter +ve Integer Kthx bye.\n";
                 break;
 
-            case 28: 
+            case 28:
                 cout<<"Enter any +ve Integer\n";
-                cin>>n; 
+                cin>>n;
                 if (n > 0)
                 {
                     orig=n;
@@ -540,7 +540,7 @@ int main()
                     {
                         cout<<pt<<" ";
                     }
-                    cout<<"\n"; 
+                    cout<<"\n";
                 }
 
                 cout<<"\nPattern 2\n";
@@ -557,7 +557,7 @@ int main()
                 for (i = rows; i >= 1; i--)
                 {
                     for (j = 1; j <= i; j++)
-                    {  
+                    {
                         cout<<pt<<" ";
                     }
                     cout<<"\n";
@@ -586,11 +586,11 @@ int main()
                     }
                     for (p = 0; p !=2*i-1; p++)
                     {
-                        cout<<pt<<" "; 
+                        cout<<pt<<" ";
                     }
                     cout<<"\n";
                 }
-                break;     
+                break;
 
             case 32:
                 cout<<"Number Patterns\n";
@@ -605,7 +605,7 @@ int main()
                     }
                 cout<<"\n";
                 }
-        
+
                 cout<<"\nPattern 2\n";
                 for (i = 1; i <= rows; i++)
                 {
@@ -639,7 +639,7 @@ int main()
                     }
                 cout<<"\n";
                 }
-        
+
                 cout<<"\nPattern 5\n";
                 for (i = rows; i >= 1; i--)
                 {
@@ -655,7 +655,7 @@ int main()
                 }
                 break;
 
-            case 33: 
+            case 33:
                 cout<<"Enter any Upper Case charatcher \n";
                 cin>>ch;
                 for (i = 1; i <= (ch-'A'+1); i++)
@@ -667,7 +667,7 @@ int main()
                     alpha++;
                 cout<<"\n";
                 }
-                break;  
+                break;
 
             case 34:
                 cout<<"Enter the numebr of elements u want to use\n";
@@ -728,7 +728,6 @@ int main()
                             A[i]=A[j];
                             A[j]=temp;
                         }
-                        
                     }
                 }
                 pass ++;
@@ -770,7 +769,7 @@ int main()
                     else
                     {
                         cout<<"There exists Complex and Imaginary Roots because the Determinant is "<<d<<"\n";
-                    }         
+                    }
                 }
                 break;
 
@@ -792,7 +791,7 @@ int main()
                     for (j = 0; j < cl; j++)
                     {
                         cout<<M[i][j]<<"\t";
-                    }    
+                    }
                     cout<<"\n";
                 }
                 cout<<"The Transpose of Matrix is\n";
@@ -801,10 +800,10 @@ int main()
                     for (j = 0; j < cl; j++)
                     {
                         cout<<M[j][i]<<"\t";
-                    }            
-                    cout<<"\n";       
-                }  
-                break; 
+                    }
+                    cout<<"\n";
+                }
+                break;
 
             case 38:
                 cout<<"Enter the order of matrix\n";
@@ -816,7 +815,7 @@ int main()
                     for (j = 0; j < cl; j++)
                     {
                         cin>>M[i][j];
-                    }                  
+                    }
                 }
                 for (i = 0; i < ro; i++)
                 {
@@ -826,7 +825,6 @@ int main()
                         rsum=rsum+M[i][j];
                         cout<<"Sum of Rows of Martix = "<<rsum<<"\n";
                     }
-                    
                 }
                 for (i = 0; i < cl; i++)
                 {
@@ -835,7 +833,7 @@ int main()
                     {
                         csum=csum+M[i][j];
                         cout<<"Sum of Colums of Matrix = "<<csum<<"\n";
-                    }  
+                    }
                 }
                 break;
 
@@ -857,14 +855,14 @@ int main()
                     {
                         cin>>M2[i][j];
                     }
-                }      
+                }
                 cout<<"Matrix A\n";
                 for (i = 0; i < n; i++)
                 {
                     for (j = 0; j < n; j++)
                     {
                         cout<<M1[i][j]<<"\t";
-                    }  
+                    }
                     cout<<"\n";
                 }
                 cout<<"Matrix B\n";
@@ -873,7 +871,7 @@ int main()
                     for (j = 0; j < n; j++)
                     {
                         cout<<M2[i][j]<<"\t";
-                    }  
+                    }
                     cout<<"\n";
                 }
                 cout<<"Addition of Square Matrices A and B is\n";
@@ -882,7 +880,7 @@ int main()
                     for (j = 0; j < n; j++)
                     {
                         cout<<M1[i][j]+M2[i][j]<<"\t";
-                    }  
+                    }
                     cout<<"\n";
                 }
                 cout<<"Subtraction of Square Matrices A and B is\n";
@@ -891,7 +889,7 @@ int main()
                     for (j = 0; j < n; j++)
                     {
                         cout<<M1[i][j]-M2[i][j]<<"\t";
-                    }  
+                    }
                     cout<<"\n";
                 }
                 break;
@@ -900,11 +898,11 @@ int main()
                 cout<<"\nMyself PRAJWAL.S\n";
                 cout<<"Noob Learning C++\nMade a Simple and Very Useful C++ Program\n";
                 cout<<"Telegram: @PrajjuS\nGithub: https://github.com/PrajjuS\n";
-                break;   
+                break;
 
             default:
             cout<<"Invalid Input";
-            break;    
+            break;
         }
         /************************** BODY END ******************************/
         cout<<"\nMore features will be added soon\nThank you\nMade by Prajwal.S\n\n";
